@@ -65,11 +65,11 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于香港大专"
+                content: 目前就读于香港大专
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "我知道我成绩不好，不过我会努力的！"
+                    content: "我知道我成绩不好，不过我会努力的"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
