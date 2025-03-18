@@ -51,7 +51,7 @@ function bot_ui_ini() {
     var sure = function () {
             botui.message.add({
                 delay: 600,
-                content: "😘"
+                content: "1"
             }).then(function () {
                 secondpart()
             })
