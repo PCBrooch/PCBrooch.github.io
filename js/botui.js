@@ -65,7 +65,7 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: 目前就读于香港大专
+                content: "目前就读于香港大专"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
