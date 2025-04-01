@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">我的世界服务器本地搭建指南第二章 | Ebores Blog</title>
+  <title itemprop="name">我的世界服务器本地搭建指南第二期 | Ebores Blog</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -316,7 +316,7 @@
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      我的世界服务器本地搭建指南第二章</h1>
+      我的世界服务器本地搭建指南第二期</h1>
       <p class="entry-census">
         <span>
           <a href="">
@@ -342,8 +342,8 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>欢迎来到我的世界服务器本地搭建指南第二章，这一章节主要讲的是如何配置你的服务端</p>
-<h1 id="配置你的服务端"><a href="#配置你的服务端" class="headerlink" title="配置你的服务端"></a>配置你的服务端</h1><p>在第一章中，服务器已经完成了部署，接下来将对服务器做出一些配置修改，因此我们先在</p>
+          <p>欢迎来到我的世界服务器本地搭建指南第二期，这一章节主要讲的是如何配置你的服务端</p>
+<h1 id="配置你的服务端"><a href="#配置你的服务端" class="headerlink" title="配置你的服务端"></a>配置你的服务端</h1><p>在第一期中，服务器已经完成了部署，接下来将对服务器做出一些配置修改，因此我们先在</p>
 <p>终端输入stop来安全地关闭服务器</p>
 <h2 id="服务器根目录重要部分讲解"><a href="#服务器根目录重要部分讲解" class="headerlink" title="服务器根目录重要部分讲解"></a>服务器根目录重要部分讲解</h2><p>我会筛选出服务器根目录下重要的部分讲解</p>
 <div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc23.png" width="50%"><br></div>
@@ -365,7 +365,6 @@
 <p>保存即可</p>
 <div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc24.png" width="50%"><br></div>
 
-
 <p>5 .最后，也是最重要的一项，server.properties，如果有一定英语基础的话这些内容也不难理解，这些我们都可以修</p>
 <p>改，请注意这里的online-mode，当开启了正版验证，所有离线登录的玩家都会被服务器拒绝（无正版玩家）</p>
 <p>如果你还没有正版账户 请考虑关闭它，其次是view-distance，该项数值越大 服务器所能提供给玩家的视野就越大，</p>
@@ -375,8 +374,42 @@
 <p>服务器上部署多个服务端，否则并不建议修改它，最后要说明的就是while-list，开启该选项后，所有不在白名单内的玩家</p>
 <p>都会被服务器拒绝，最后注意一点，修改完的配置需要重启服务端生效</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server-ip=                  #本地服务器ip地址</span><br><span class="line">allow-nether=true             #是否生成下界 [T/F]</span><br><span class="line">server-port=25565              #本地服务器开放端口</span><br><span class="line">force-gamemode=false            #强制修改玩家登录时模式</span><br><span class="line">white-list=false                #是否开启白名单</span><br><span class="line">spawn-npcs=true                #是否允许出生点生成npc</span><br><span class="line">spawn-animals=true              #是否允许出生点生成动物</span><br><span class="line">spawn-protection=16              #出生点保护范围【禁止普通玩家破坏】</span><br><span class="line">max-world-size=29999984           #生成世界的最大尺寸【单位:米】</span><br></pre></td></tr></table></figure>
-<h2 id="测试服务端能否正常连接"><a href="#测试服务端能否正常连接" class="headerlink" title="测试服务端能否正常连接"></a>测试服务端能否正常连接</h2><p>修改完重启之后，现在我们就来测试一下服务端能否正常连接，</p>
+<h2 id="测试服务端能否正常连接"><a href="#测试服务端能否正常连接" class="headerlink" title="测试服务端能否正常连接"></a>测试服务端能否正常连接</h2><p>修改完重启之后，现在我们就来测试一下服务端能否正常连接</p>
+<ul>
+<li>打开对应服务端版本的我的世界客户端，要想远程连接到这台服务器，首先我们得知道这台服务器的ip地址                          Win+R键调出运行，在运行中我们输入cmd</li>
+</ul>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc25.png" width="50%"><br></div>
 
+<ul>
+<li>在接下来的命令提示符中输入ipconfig，这个命令可以用来查看本机(服)ip地址</li>
+</ul>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc26.png" width="50%"><br></div>
+
+<ul>
+<li>在这里我们看到了一个ipv4，把它记下来</li>
+</ul>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc27.png" width="50%"><br></div>
+
+<ul>
+<li>左边打开客户端 右边打开服务端，然后在我们需要连接到的客户端上，点多人游戏 添加服务器，在服务器地址中，将这一串输进去</li>
+</ul>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc28.png" width="50%"><br></div>
+
+<ul>
+<li>可以看到这里已经检索到了我们的服务器，直接进入</li>
+</ul>
+<p>#未完成图片添加</p>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc29.png" width="50%"><br></div>
+
+<ul>
+<li>我们现在已经加入了这个世界，也可以看到右边的服务器输出了相应的消息，就证明加入到这个服务器里面了</li>
+</ul>
+<p>#未完成图片添加</p>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc30.png" width="50%"><br></div>
+
+
+
+<h3 id="本期内容就到此结束了，下期我们会提到广域网和端口映射，让计算机通过互联网而不仅仅局限于局域网连接，并且还会进一步了解服务器的各项参数，希望本期教程能帮助到你，我们下期再见"><a href="#本期内容就到此结束了，下期我们会提到广域网和端口映射，让计算机通过互联网而不仅仅局限于局域网连接，并且还会进一步了解服务器的各项参数，希望本期教程能帮助到你，我们下期再见" class="headerlink" title="本期内容就到此结束了，下期我们会提到广域网和端口映射，让计算机通过互联网而不仅仅局限于局域网连接，并且还会进一步了解服务器的各项参数，希望本期教程能帮助到你，我们下期再见"></a>本期内容就到此结束了，下期我们会提到广域网和端口映射，让计算机通过互联网而不仅仅局限于局域网连接，并且还会进一步了解服务器的各项参数，希望本期教程能帮助到你，我们下期再见</h3>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -433,7 +466,7 @@
               Next Post</span>
               <div class="info">
                 <h3>
-                我的世界服务器本地搭建指南第一章</h3>
+                我的世界服务器本地搭建指南第一期</h3>
                 <hr>
               </div>
             </a>
