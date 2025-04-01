@@ -345,7 +345,7 @@
           <p>欢迎来到我的世界服务器本地搭建指南第二章，这一章节主要讲的是如何配置你的服务端</p>
 <h1 id="配置你的服务端"><a href="#配置你的服务端" class="headerlink" title="配置你的服务端"></a>配置你的服务端</h1><p>在第一章中，服务器已经完成了部署，接下来将对服务器做出一些配置修改，因此我们先在</p>
 <p>终端输入stop来安全地关闭服务器</p>
-<p>我会筛选出服务器根目录下重要的部分讲解</p>
+<h2 id="服务器根目录重要部分讲解"><a href="#服务器根目录重要部分讲解" class="headerlink" title="服务器根目录重要部分讲解"></a>服务器根目录重要部分讲解</h2><p>我会筛选出服务器根目录下重要的部分讲解</p>
 <div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc23.png" width="50%"><br></div>
 
 <p>1 .logs （日志文件夹）它主要用于保存服务端产生的记录，这包括聊天记录 使用过的指令和报错等</p>
@@ -361,7 +361,21 @@
 <p>ops.json （管理员玩家列表）</p>
 <p>whitelist.json （白名单玩家列表）</p>
 <p>4 .接下来的spigot.yml是配置数据，用记事本打开,找到Message标签，这里列出了不同情况下服务端发出的回复，</p>
-<p>我们可以将冒号后的提示修改为中文，但请注意冒号有一个空格不能覆盖，其它选项暂时没有调整的必要</p>
+<p>我们可以将冒号后的提示修改为中文，但请注意冒号有一个空格不能覆盖，其它选项暂时没有调整的必要，编辑完</p>
+<p>保存即可</p>
+<div style="display: flex; gap: 10px;"><br>  <img src="/images/startdash/mc24.png" width="50%"><br></div>
+
+
+<p>5 .最后，也是最重要的一项，server.properties，如果有一定英语基础的话这些内容也不难理解，这些我们都可以修</p>
+<p>改，请注意这里的online-mode，当开启了正版验证，所有离线登录的玩家都会被服务器拒绝（无正版玩家）</p>
+<p>如果你还没有正版账户 请考虑关闭它，其次是view-distance，该项数值越大 服务器所能提供给玩家的视野就越大，</p>
+<p>但相应的性能开销也会增加，如果服务器存在性能上的卡顿，可以尝试减小该数值以改善情况</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gamemode=survival                    #默认游戏模式</span><br><span class="line">enable-command-block=false           #是否允许使用命令方块[T/F]</span><br><span class="line">motd=A Minecraft Server              #服务器在列表中的说明</span><br><span class="line">query.port=25565                     #本地开放端口[很重要勿修改]</span><br><span class="line">pvp=true                             #是否允许PVP</span><br><span class="line">difficulty=easy                      #游戏难度[peaceful/easy/normal/hard]</span><br><span class="line">require-resource-pack=false          #是否强制要求加载相应材质包</span><br><span class="line">max-players=20                       #允许的最大玩家连接数</span><br><span class="line">online-mode=true                     #是否启用正版验证 [T/F]</span><br><span class="line">allow-flight=false                   #是否允许所有玩家飞行[i/F]</span><br><span class="line">view-distance=10                     #服务端提供的最大视野[单位:区块]</span><br></pre></td></tr></table></figure>
+<p>6 .继续，这里的server-ip请先留空，后续的教程会用到ip地址的配置，server-port的默认是25565，除非你需要在这台</p>
+<p>服务器上部署多个服务端，否则并不建议修改它，最后要说明的就是while-list，开启该选项后，所有不在白名单内的玩家</p>
+<p>都会被服务器拒绝，最后注意一点，修改完的配置需要重启服务端生效</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server-ip=                  #本地服务器ip地址</span><br><span class="line">allow-nether=true             #是否生成下界 [T/F]</span><br><span class="line">server-port=25565              #本地服务器开放端口</span><br><span class="line">force-gamemode=false            #强制修改玩家登录时模式</span><br><span class="line">white-list=false                #是否开启白名单</span><br><span class="line">spawn-npcs=true                #是否允许出生点生成npc</span><br><span class="line">spawn-animals=true              #是否允许出生点生成动物</span><br><span class="line">spawn-protection=16              #出生点保护范围【禁止普通玩家破坏】</span><br><span class="line">max-world-size=29999984           #生成世界的最大尺寸【单位:米】</span><br></pre></td></tr></table></figure>
+<h2 id="测试服务端能否正常连接"><a href="#测试服务端能否正常连接" class="headerlink" title="测试服务端能否正常连接"></a>测试服务端能否正常连接</h2><p>修改完重启之后，现在我们就来测试一下服务端能否正常连接，</p>
 
         </div>
         <!-- .entry-content -->
