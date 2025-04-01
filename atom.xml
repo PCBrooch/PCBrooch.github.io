@@ -6,7 +6,7 @@
   <link href="https://pcbrooch.github.io/atom.xml" rel="self"/>
   
   <link href="https://pcbrooch.github.io/"/>
-  <updated>2025-03-30T21:19:59.826Z</updated>
+  <updated>2025-04-01T07:10:34.566Z</updated>
   <id>https://pcbrooch.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mc server2</title>
+    <link href="https://pcbrooch.github.io/2025/04/01/mc-server3/"/>
+    <id>https://pcbrooch.github.io/2025/04/01/mc-server3/</id>
+    <published>2025-04-01T07:10:34.000Z</published>
+    <updated>2025-04-01T07:10:34.566Z</updated>
+    
+    
+    
+    
+    <category term="技术" scheme="https://pcbrooch.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>sakura</title>
@@ -42,7 +57,7 @@
     <link href="https://pcbrooch.github.io/2025/03/31/McServer1/"/>
     <id>https://pcbrooch.github.io/2025/03/31/McServer1/</id>
     <published>2025-03-30T23:39:34.000Z</published>
-    <updated>2025-04-01T05:57:14.384Z</updated>
+    <updated>2025-04-01T07:01:41.376Z</updated>
     
     
       
@@ -52,6 +67,21 @@
     <summary type="html">&lt;h1 id=&quot;服务器搭建指南第一章（简单粗暴版）&quot;&gt;&lt;a href=&quot;#服务器搭建指南第一章（简单粗暴版）&quot; class=&quot;headerlink&quot; title=&quot;服务器搭建指南第一章（简单粗暴版）&quot;&gt;&lt;/a&gt;服务器搭建指南第一章（简单粗暴版）&lt;/h1&gt;&lt;h2</summary>
         
       
+    
+    
+    
+    <category term="技术" scheme="https://pcbrooch.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的世界服务器本地搭建指南第二章</title>
+    <link href="https://pcbrooch.github.io/2025/03/31/mc-server2/"/>
+    <id>https://pcbrooch.github.io/2025/03/31/mc-server2/</id>
+    <published>2025-03-30T23:39:34.000Z</published>
+    <updated>2025-04-01T07:01:33.327Z</updated>
+    
     
     
     
