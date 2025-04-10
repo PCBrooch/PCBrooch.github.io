@@ -6,7 +6,7 @@
   <link href="https://pcbrooch.github.io/atom.xml" rel="self"/>
   
   <link href="https://pcbrooch.github.io/"/>
-  <updated>2025-04-02T07:37:31.353Z</updated>
+  <updated>2025-04-09T23:11:35.349Z</updated>
   <id>https://pcbrooch.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>游戏资源下载</title>
+    <link href="https://pcbrooch.github.io/2025/04/09/game/"/>
+    <id>https://pcbrooch.github.io/2025/04/09/game/</id>
+    <published>2025-04-09T10:08:24.000Z</published>
+    <updated>2025-04-09T23:11:35.349Z</updated>
+    
+    
+    
+    
+    <category term="资源" scheme="https://pcbrooch.github.io/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>我的世界服务器本地搭建指南第四期（完结）</title>
