@@ -298,7 +298,58 @@
   
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      <div style="background:#ff9800;color:white;padding:15px;margin:20px 0;border-radius:8px;text-align:center;font-weight:bold;"><br>    欢迎来到Aincrad服务器！<br></div>
+      <div id="fade-banner" style="
+    background: #ff9800;
+    color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    cursor: pointer;
+"><br>    <div id="banner-content" style="
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: opacity 0.5s ease;
+    "><br>        ！欢迎来到Aincrad我的世界服务器！<br>    </div><br></div>
+
+<script>
+const announcements = [
+    "欢迎来到Aincrad服务器！有生存和各种模式，欢迎体验！",
+    "日常维护时间 早上10:00-12:00",
+    "！欢迎来到Aincrad我的世界服务器！",
+    "服务器地址",
+];
+
+let currentIndex = 0;
+const contentElement = document.getElementById('banner-content');
+
+function fadeAnnouncement() {
+    // 淡出
+    contentElement.style.opacity = '0';
+
+    setTimeout(() => {
+        // 更新内容
+        currentIndex = (currentIndex + 1) % announcements.length;
+        contentElement.textContent = announcements[currentIndex];
+
+        // 淡入
+        contentElement.style.opacity = '1';
+    }, 500);
+}
+
+// 初始设置
+setInterval(fadeAnnouncement, 4000);
+
+// 点击切换
+document.getElementById('fade-banner').onclick = fadeAnnouncement;
+</script>
 
       <!-- .entry-content -->
       
