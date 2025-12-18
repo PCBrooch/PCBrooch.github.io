@@ -298,7 +298,32 @@
   
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      <div style="display: contents;"><br><style><br>/<em> 只影响当前页面 </em>/<br>body,<br>body * {<br>    cursor: url(‘<a href="https://cur.cursors-4u.net/cursors/cur-2/cur116.cur&#39;)">https://cur.cursors-4u.net/cursors/cur-2/cur116.cur&#39;)</a>, auto !important;<br>}<br><br><br><div id="fade-banner" style="
+      <style>
+/* 只调整本文的顶部背景图 */
+.post-header,
+.article-header,
+.page-header {
+    height: 150px !important; /* 设置你想要的高度 */
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* 如果背景图是通过 img 标签 */
+.post-header img,
+.article-header img {
+    max-height: 150px !important;
+    object-fit: cover !important;
+}
+
+/* 调整标题位置 */
+.post-title,
+.article-title {
+    padding-top: 60px !important;
+}
+</style>
+
+
+<div id="fade-banner" style="
     background: #ff9800;
     color: white;
     padding: 15px;
