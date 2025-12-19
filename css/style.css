@@ -933,7 +933,7 @@ html {
 body {
     background:#fff;
     background-attachment:fixed;
-    cursor:url(/images/cursor/normal.cur),auto
+    cursor:url('/images/cursor/normal.cur'),auto
 }
 blockquote:before,blockquote:after,q:before,q:after {
     content:""
@@ -2237,7 +2237,7 @@ h1.page-title.mb- {
     background-size:contain;
     -webkit-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur),auto;
+    cursor:url(/images/cursor/unavailable.cur),auto;
     opacity:1
 }
 .cd-top.cd-is-visible {
