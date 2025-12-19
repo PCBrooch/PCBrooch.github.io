@@ -720,13 +720,13 @@ audio:not([controls]) {
 a {
     background-color:transparent;
     text-decoration:none;
-    cursor:url(img/cursor/ayuda.cur),auto
+    cursor:url(images/cursor/ayuda.cur),auto
 }
 a:active,a:hover {
     outline:0
 }
 a:active {
-    cursor:url(img/cursor/work.cur),alias
+    cursor:url(images/cursor/work.cur),alias
 }
 abbr[title] {
     border-bottom:1px dotted
@@ -847,7 +847,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom:1.5em;
-    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur),auto
+    cursor:url(images/cursor/texto.cur),auto
 }
 dfn,cite,em,i {
     font-style:italic
@@ -7328,7 +7328,7 @@ to {
     padding:2px;
     text-shadow:none;
     border-radius:0 0 5px 5px;
-    cursor:url(img/cursor/texto.cur),auto
+    cursor:url(images/cursor/texto.cur),auto
 }
 .highlight-wrap code[data-rel]:before {
     color:#fff;
