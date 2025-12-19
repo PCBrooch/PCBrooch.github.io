@@ -720,13 +720,13 @@ audio:not([controls]) {
 a {
     background-color:transparent;
     text-decoration:none;
-    cursor:url(images/cursor/ayuda.cur),auto
+    cursor:url(/images/cursor/ayuda.cur),auto
 }
 a:active,a:hover {
     outline:0
 }
 a:active {
-    cursor:url(images/cursor/work.cur),alias
+    cursor:url(/images/cursor/work.cur),alias
 }
 abbr[title] {
     border-bottom:1px dotted
@@ -847,7 +847,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom:1.5em;
-    cursor:url(images/cursor/texto.cur),auto
+    cursor:url(/images/cursor/texto.cur),auto
 }
 dfn,cite,em,i {
     font-style:italic
